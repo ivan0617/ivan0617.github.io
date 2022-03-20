@@ -9,30 +9,30 @@ function menuClick() {
 }
 
 function pressAbout() {
-    var about = document.getElementById("about").className = "active";
-    var skills = document.getElementById("skills").className = "";
-    var projects = document.getElementById("projects").className = "";
-    var contact = document.getElementById("contact").className = "";
+    var about = document.getElementById("aboutNav").className = "active";
+    var skills = document.getElementById("skillsNav").className = "";
+    var projects = document.getElementById("projectsNav").className = "";
+    var contact = document.getElementById("contactNav").className = "";
 }
 
 function pressSkills() {
-    var about = document.getElementById("about").className = "";
-    var skills = document.getElementById("skills").className = "active";
-    var projects = document.getElementById("projects").className = "";
-    var contact = document.getElementById("contact").className = "";
+    var about = document.getElementById("aboutNav").className = "";
+    var skills = document.getElementById("skillsNav").className = "active";
+    var projects = document.getElementById("projectsNav").className = "";
+    var contact = document.getElementById("contactNav").className = "";
 }
 
 function pressProjects() {
-    var about = document.getElementById("about").className = "";
-    var skills = document.getElementById("skills").className = "";
-    var projects = document.getElementById("projects").className = "active";
-    var contact = document.getElementById("contact").className = "";
+    var about = document.getElementById("aboutNav").className = "";
+    var skills = document.getElementById("skillsNav").className = "";
+    var projects = document.getElementById("projectsNav").className = "active";
+    var contact = document.getElementById("contactNav").className = "";
 }
 
 function pressContact() {
-    var about = document.getElementById("about").className = "";
-    var skills = document.getElementById("skills").className = "";
-    var projects = document.getElementById("projects").className = "";
-    var contact = document.getElementById("contact").className = "active";
+    var about = document.getElementById("aboutNav").className = "";
+    var skills = document.getElementById("skillsNav").className = "";
+    var projects = document.getElementById("projectsNav").className = "";
+    var contact = document.getElementById("contactNav").className = "active";
 }
   
