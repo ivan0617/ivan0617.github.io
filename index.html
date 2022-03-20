@@ -9,17 +9,19 @@
 </head>
 <body>
     <header>
-        <nav >
-            <ul class="nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#mobile">Mobile</a></li>
-                <li><a href="#web">Web</a></li>
-                <li><a href="#python">Python</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="mainNav" id="mainNav">
+            <a href="#about" class="active"  id="about" onclick="pressAbout()">About</a>
+            <a href="#skills" id="skills" onclick="pressSkills()">Skills</a>
+            <a href="#projects" id="projects" onclick="pressProjects()">Projects</a>
+            <a href="#contact" id="contact" onclick="pressContact()">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="menuClick()">
+              <div></div>
+              <div></div>
+              <div></div>
+            </a>
+          </div>
     </header>
     <h1>Hello World!!</h1>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
