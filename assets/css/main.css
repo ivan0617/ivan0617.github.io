@@ -13,14 +13,38 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+img {
+    width: 100%;
+}
 p{
     font-size: 3rem;
 }
-/*Mobile First*/
 
+.link {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+.link:link {
+    color: #2666CF;
+}
+  
+.link:hover {
+    border-bottom: 1px solid;
+    font-weight: 600;
+}
+  
+.link:active {
+    color: #332FD0;
+}
+
+/*Nav*/
 .mainNav {
-  overflow: hidden;
-  background-color: #333;
+    overflow: hidden;
+    background-color: #333;
+    min-width: 60rem;
 }
 
 .mainNav a {
@@ -56,6 +80,26 @@ p{
     margin: .3rem 0;
 }
 
+/*About section*/
+.container {
+    min-width: 60rem;
+    display: flex;
+}
+
+.container div {
+    padding: 1rem;
+}
+
+#about {
+    padding: 2rem 2rem;
+    text-align: left;
+}
+.porfilePicture {
+    border-radius: 100%;
+    width: 33rem;
+    height: 33rem;
+    margin: 0;
+}
 
 @media screen and (max-width: 600px) {
     .mainNav a:not(:first-child) {display: none;}
@@ -77,6 +121,14 @@ p{
         display: block;
         text-align: left;
     }
-  
+    .container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .container p{
+        text-align: center;
+    }
 }
 
