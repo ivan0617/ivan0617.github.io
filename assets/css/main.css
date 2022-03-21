@@ -13,6 +13,9 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
 }
+p{
+    font-size: 3rem;
+}
 /*Mobile First*/
 
 .mainNav {
