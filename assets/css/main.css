@@ -17,7 +17,7 @@ body {
 img {
     width: 100%;
 }
-p{
+p {
     font-size: 3rem;
 }
 
@@ -87,12 +87,22 @@ p{
 }
 
 .container div {
-    padding: 1rem;
+    padding: 1rem 3rem;
 }
 
 #about {
-    padding: 2rem 2rem;
+    padding: 5rem 2rem;
     text-align: left;
+    background-color: #242943;
+}
+
+#about p{
+    color: white;
+}
+
+#about a {
+    color: coral;
+    font-weight: 600;
 }
 .porfilePicture {
     border-radius: 100%;
@@ -100,12 +110,15 @@ p{
     height: 33rem;
     margin: 0;
 }
-
+/*
 @media screen and (max-width: 600px) {
     .mainNav a:not(:first-child) {display: none;}
     .mainNav a.icon {
         float: right;
         display: block;
+    }
+    .container{
+        max-width: 60rem;
     }
 }
 
@@ -122,6 +135,43 @@ p{
         text-align: left;
     }
     .container {
+        max-width: 60rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .container p{
+        text-align: center;
+    }
+}
+*/
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .mainNav a:not(:first-child) {display: none;}
+    .mainNav a.icon {
+        float: right;
+        display: block;
+    }
+    .container{
+        max-width: 60rem;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    .mainNav.responsive {position: relative;}
+    .mainNav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .mainNav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .container {
+        max-width: 60rem;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -132,3 +182,16 @@ p{
     }
 }
 
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .container {
+        max-width: 80rem;
+    }
+
+    .container div {
+        padding: 1rem ;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
