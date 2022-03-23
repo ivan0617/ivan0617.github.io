@@ -238,12 +238,10 @@ p {
         height: 2rem;
     }
 
-    
-
-
 }
 
-@media screen and (min-width: 600px) and (max-width: 800px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
     .container div {
         padding: 1rem ;
     }
@@ -252,8 +250,67 @@ p {
         font-size: 2rem;
     }
 
+
+    /*skills*/
+
+    .container-skills{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
     .title {
         width: 45rem;
         margin: 0 auto;
+    }
+
+    .title h1 {
+        text-align: center;
+    }
+
+    #skills p {
+        padding: 1rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .skill-ind {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-skills div{
+        padding: 1.5rem 1rem;
+    }
+
+    .skill-ind span {
+        font-size: 1.5rem;
+    }
+
+    .progress-bar {
+        width: 20rem;
+        height: 2.5rem;
+    }
+
+    .container-skills {
+        display: grid;
+        grid-template-columns: 29rem 29rem;
+    }
+
+    .img-skills {
+        width: 9.5rem;
+        height: 8.5rem;
+    }
+
+    .git-github {
+        width: 15.5rem;
+        height: 9.5rem;
+    }
+}
+
+@media (min-width:900px) {
+    body{
+        background-color: aqua;
     }
 }
