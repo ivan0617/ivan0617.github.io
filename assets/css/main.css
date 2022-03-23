@@ -115,11 +115,6 @@ p {
 
 /*skills*/
 
-.skill-ind {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .title {
     width: 20rem;
     border-width: .5rem;
@@ -195,6 +190,12 @@ p {
     }
 
     /*skills*/
+    #skills p{
+        padding: 1rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
     .container-skills{
         padding: 2rem;
     }
@@ -223,6 +224,8 @@ p {
     }
 
     .skill-ind {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
