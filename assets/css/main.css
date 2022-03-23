@@ -80,28 +80,29 @@ p {
     margin: .3rem 0;
 }
 
-/*About section*/
+
 .container {
     min-width: 320px;
     width: 100%;
     display: flex;
 }
 
-.container div {
+/*About section*/
+#about div {
     padding: 1rem 3rem;
 }
 
-.container {
+#about {
     padding: 5rem 2rem;
     text-align: left;
     background-color: #242943;
 }
 
-.container p{
+#about p{
     color: white;
 }
 
-.container a {
+#about a {
     color: coral;
     font-weight: 600;
 }
@@ -111,42 +112,36 @@ p {
     height: 33rem;
     margin: 0;
 }
-/*
-@media screen and (max-width: 600px) {
-    .mainNav a:not(:first-child) {display: none;}
-    .mainNav a.icon {
-        float: right;
-        display: block;
-    }
-    .container{
-        max-width: 60rem;
-    }
+
+/*skills*/
+
+.skill-ind {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@media screen and (max-width: 600px) {
-    .mainNav.responsive {position: relative;}
-    .mainNav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .mainNav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .container {
-        max-width: 60rem;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .container p{
-        text-align: center;
-    }
+.title {
+    width: 20rem;
+    border-width: .5rem;
+    border-style: solid;
+    border-color: rgb(124, 118, 115);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
 }
-*/
+
+.title h1 {
+    font-size: 3rem;
+    color: #2666CF;
+    padding: 1.5rem 1rem;
+}
+
+.progress-bar {
+    width: 40rem;
+    height: 2rem;
+}
+
+/************************ break points ************************/
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .mainNav a:not(:first-child) {display: none;}
@@ -159,7 +154,7 @@ p {
         width: 100%;
     }
 
-    .container div {
+    #about div {
         padding: 1rem 0;
     }
 }
@@ -184,11 +179,12 @@ p {
         text-align: center;
     }
 
-    .container div {
+    /*about*/
+    #about div {
         padding: 1rem 0;
     }
 
-    .container p{
+    #about p{
         text-align: center;
         font-size: 2rem;
     }
@@ -197,6 +193,50 @@ p {
         width: 31rem;
         height: 31rem;
     }
+
+    /*skills*/
+    .container-skills{
+        padding: 2rem;
+    }
+
+    .container-skills div{
+        padding: 1rem 0;
+    }
+
+    .title {
+        width: 30rem;
+        margin: 0 auto;
+    }
+
+    .title h1 {
+        text-align: center;
+    }
+
+    .img-skills {
+        width: 8rem;
+        height: 7rem;
+    }
+
+    .git-github {
+        width: 14rem;
+        height: 8rem;
+    }
+
+    .skill-ind {
+        justify-content: center;
+    }
+
+    .skill-ind span {
+        font-size: 1.5rem;
+    }
+
+    .progress-bar {
+        width: 29rem;
+        height: 2rem;
+    }
+
+    
+
 
 }
 
@@ -207,5 +247,10 @@ p {
 
     .container p{
         font-size: 2rem;
+    }
+
+    .title {
+        width: 45rem;
+        margin: 0 auto;
     }
 }
