@@ -137,7 +137,7 @@ p {
 }
 
 /************************ break points ************************/
-
+/*Mobile*/
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .mainNav a:not(:first-child) {display: none;}
     .mainNav a.icon {
@@ -191,7 +191,7 @@ p {
 
     /*skills*/
     #skills p{
-        padding: 1rem;
+        padding: 2rem;
         text-align: center;
         font-size: 2rem;
     }
@@ -240,6 +240,7 @@ p {
 
 }
 
+/*Tablet*/
 @media screen and (min-width: 600px) and (max-width: 900px) {
 
     .container div {
@@ -250,13 +251,16 @@ p {
         font-size: 2rem;
     }
 
-
     /*skills*/
-
     .container-skills{
+        display: grid;
+        grid-template-columns: 29rem 29rem;
         padding: 2rem;
-        display: flex;
         justify-content: center;
+    }
+
+    .container-skills div{
+        padding: 1.5rem 1rem;
     }
 
     .title {
@@ -280,10 +284,6 @@ p {
         justify-content: center;
     }
 
-    .container-skills div{
-        padding: 1.5rem 1rem;
-    }
-
     .skill-ind span {
         font-size: 1.5rem;
     }
@@ -291,11 +291,6 @@ p {
     .progress-bar {
         width: 20rem;
         height: 2.5rem;
-    }
-
-    .container-skills {
-        display: grid;
-        grid-template-columns: 29rem 29rem;
     }
 
     .img-skills {
@@ -309,8 +304,59 @@ p {
     }
 }
 
+/*Desktop*/
 @media (min-width:900px) {
-    body{
-        background-color: aqua;
+    /*skills*/
+    .container-skills {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 29rem 29rem 29rem;
+        justify-content: center;
+    }
+
+    .container-skills div{
+        padding: 3rem 0;
+    }
+
+    .title {
+        width: 60rem;
+        margin: 0 auto;
+    }
+
+    .title h1 {
+        text-align: center;
+    }
+
+    #skills p {
+        padding: 2.5rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .skill-ind {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .skill-ind span {
+        font-size: 2rem;
+    }
+
+    .progress-bar {
+        width: 20rem;
+        height: 2.5rem;
+    }
+
+
+    .img-skills {
+        width: 9.5rem;
+        height: 8.5rem;
+    }
+
+    .git-github {
+        width: 15.5rem;
+        height: 9.5rem;
     }
 }
