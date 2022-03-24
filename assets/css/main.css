@@ -78,8 +78,8 @@ p {
     height: .35rem;
     background-color: white;
     margin: .3rem 0;
+    border-radius: 1rem;
 }
-
 
 .container {
     min-width: 320px;
