@@ -63,7 +63,6 @@ p {
     color: black;
 }
 
-
 .mainNav a.active {
     background-color: #2666CF;
     color: white;
@@ -135,6 +134,45 @@ p {
     width: 40rem;
     height: 2rem;
 }
+
+/*contact section*/
+#contact {
+    background-color: #242943;
+    padding: 1rem;
+}
+
+#contact p {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
+#contact a {
+    color: coral;
+}
+
+.contact-ind {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.contact-ind span {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+/*icons*/
+.fa-phone, .fa-envelope, .fa-github {
+    color: white;
+}
+
 
 /************************ break points ************************/
 /*Mobile*/
@@ -238,6 +276,20 @@ p {
         height: 2rem;
     }
 
+    /*contact*/
+
+    .contact-ind span {
+        font-size: 2rem;
+    }
+
+    .fa-phone, .fa-envelope {
+        font-size: 2rem;
+    }
+
+    .fa-github{
+        font-size: 3rem;
+    }
+
 }
 
 /*Tablet*/
@@ -302,6 +354,24 @@ p {
         width: 15.5rem;
         height: 9.5rem;
     }
+
+    /*contact*/
+    #contact p {
+        font-size: 3.5rem;
+    }
+
+    .contact-ind span {
+        font-size: 2.5rem;
+    }
+
+    .fa-phone, .fa-envelope {
+        font-size: 2.5rem;
+    }
+
+    .fa-github{
+        font-size: 3.5rem;
+    }
+
 }
 
 /*Desktop*/
@@ -359,4 +429,26 @@ p {
         width: 20rem;
         height: 10rem;
     }
+
+    /*contact*/
+    #contact p {
+        font-size: 5rem;
+    }
+
+    .contact-ind {
+        padding: 3rem 0;
+    }
+
+    .contact-ind span {
+        font-size: 3rem;
+    }
+
+    .fa-phone, .fa-envelope {
+        font-size: 3rem;
+    }
+
+    .fa-github{
+        font-size: 4.5rem;
+    }
+
 }
