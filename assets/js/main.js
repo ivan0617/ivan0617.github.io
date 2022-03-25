@@ -13,6 +13,7 @@ function pressAbout() {
     var skills = document.getElementById("skillsNav").className = "";
     var projects = document.getElementById("projectsNav").className = "";
     var contact = document.getElementById("contactNav").className = "";
+    menuClick();
 }
 
 function pressSkills() {
@@ -20,6 +21,7 @@ function pressSkills() {
     var skills = document.getElementById("skillsNav").className = "active";
     var projects = document.getElementById("projectsNav").className = "";
     var contact = document.getElementById("contactNav").className = "";
+    menuClick();
 }
 
 function pressProjects() {
@@ -27,6 +29,7 @@ function pressProjects() {
     var skills = document.getElementById("skillsNav").className = "";
     var projects = document.getElementById("projectsNav").className = "active";
     var contact = document.getElementById("contactNav").className = "";
+    menuClick();
 }
 
 function pressContact() {
@@ -34,5 +37,6 @@ function pressContact() {
     var skills = document.getElementById("skillsNav").className = "";
     var projects = document.getElementById("projectsNav").className = "";
     var contact = document.getElementById("contactNav").className = "active";
+    menuClick();
 }
   
