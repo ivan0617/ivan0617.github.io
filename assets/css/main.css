@@ -286,6 +286,13 @@ p {
         font-size: 3rem;
     }
 
+    /*projects*/
+    #projects p{
+        padding: 2rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
 }
 
 /*Tablet*/
@@ -368,6 +375,13 @@ p {
         font-size: 3.5rem;
     }
 
+    /*projects*/
+    #projects p {
+        padding: 1rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+
 }
 
 /*Desktop*/
@@ -445,6 +459,13 @@ p {
 
     .fa-github{
         font-size: 4.5rem;
+    }
+
+    /*projects*/
+    #projects p {
+        padding: 2.5rem;
+        text-align: left;
+        font-size: 2rem;
     }
 
 }
