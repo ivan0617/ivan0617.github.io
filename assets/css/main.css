@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 
+:root {
+    --primary-color: #2666CF;
+    --secundary-color: #242943;
+    --sub-title-color: #21325E;
+    --link-color: coral;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,10 +31,11 @@ p {
     outline: none;
     text-decoration: none;
     padding: 2px 1px 0;
+    color: var(--link-color);
 }
 
 .link:link {
-    color: #2666CF;
+    color: var(--link-color);
 }
   
 .link:hover {
@@ -36,7 +44,7 @@ p {
 }
   
 .link:active {
-    color: #332FD0;
+    color: var(--link-color);
 }
 
 /*Nav*/
@@ -64,7 +72,7 @@ p {
 }
 
 .mainNav a.active {
-    background-color: #2666CF;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -90,7 +98,7 @@ p {
 #about {
     padding: 5rem 2rem;
     text-align: left;
-    background-color: #242943;
+    background-color: var(--secundary-color);
 }
 
 #about p{
@@ -98,7 +106,6 @@ p {
 }
 
 #about a {
-    color: coral;
     font-weight: 600;
 }
 .porfilePicture {
@@ -122,7 +129,7 @@ p {
 
 .title h1 {
     font-size: 3rem;
-    color: #2666CF;
+    color: var(--primary-color);
     padding: 1.5rem 1rem;
 }
 
@@ -133,7 +140,7 @@ p {
 
 /*contact section*/
 #contact {
-    background-color: #242943;
+    background-color: var(--secundary-color);
     padding: 1rem;
 }
 
@@ -146,9 +153,7 @@ p {
 }
 
 
-#contact a {
-    color: coral;
-}
+
 
 .contact-ind {
     display: flex;
@@ -169,6 +174,98 @@ p {
     color: white;
 }
 
+/*projects*/
+#projects {
+    background-color: #DFDFDE;
+    box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container-projects {
+    padding: 2rem;
+}
+
+.container-proj-ind {  
+    position: relative;  
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: #afacad;  
+    border-width: .1rem;
+}
+
+.proj-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2rem;
+}
+
+.proj-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.desc-img-proj {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: .85;
+    border-radius: 2rem;
+}
+
+.desc-item p{
+    font-weight: 900;
+    color: white;
+}
+
+.desc-img-proj:hover, .desc-img-proj:hover .desc-item p {
+    background-color: transparent;
+    color: transparent;
+}
+
+.desc-img-proj:hover, .desc-img-proj:hover .logos-item i {
+    background-color: transparent;
+    color: transparent;
+}
+
+.desc-img-proj:active, .desc-img-proj:active .desc-item p {
+    background-color: transparent;
+    color: transparent;
+}
+
+.desc-img-proj:active, .desc-img-proj:active .logos-item i {
+    background-color: transparent;
+    color: transparent;
+}
+
+.style1 {
+    background-color: #f2849e;
+}
+
+.style2 {
+    background-color: #7ecaf6;
+}
+
+.style3 {
+    background-color: #7bd0c1;
+}
+
+.style4 {
+    background-color: #c75b9b;
+}
+
+.style5 {
+    background-color: #ae85ca;
+}
+
+.style6 {
+    background-color: #8499e7;
+}
 
 /************************ break points ************************/
 /*Mobile*/
@@ -287,10 +384,44 @@ p {
     }
 
     /*projects*/
-    #projects p{
+    #projects .descripcion{
         padding: 2rem;
         text-align: center;
         font-size: 2rem;
+    }
+
+    .sub-title p {
+        font-size: 2rem;
+        font-weight: 900;
+        color: var(--sub-title-color);
+        text-align: center;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-proj-ind {
+        width: 22rem;
+        height: 33rem;  
+    }
+
+    .desc-img-proj {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc-item p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .fa-android {
+        font-size: 3.5rem;
+        color: var(--secundary-color);
     }
 
 }
@@ -376,11 +507,45 @@ p {
     }
 
     /*projects*/
-    #projects p {
+    #projects .descripcion {
         padding: 1rem;
         text-align: center;
         font-size: 2rem;
     }
+
+    .sub-title p {
+        font-size: 2rem;
+        font-weight: 900;
+        color: var(--sub-title-color);
+        text-align: center;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-proj-ind {
+        width: 22rem;
+        height: 33rem;  
+    }
+
+    .desc-img-proj {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc-item p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .fa-android {
+        font-size: 3.5rem;
+        color: var(--secundary-color);
+    }    
 
 }
 
@@ -462,10 +627,44 @@ p {
     }
 
     /*projects*/
-    #projects p {
+    #projects .descripcion {
         padding: 2.5rem;
         text-align: left;
         font-size: 2rem;
     }
+
+    .sub-title p {
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: var(--sub-title-color);
+        padding: 1rem 3rem;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-proj-ind {
+        width: 24rem;
+        height: 35rem;  
+    }
+
+    .desc-img-proj {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc-item p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .fa-android {
+        font-size: 3.5rem;
+        color: var(--secundary-color);
+    }    
 
 }
