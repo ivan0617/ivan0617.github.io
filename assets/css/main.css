@@ -400,6 +400,7 @@ p {
         font-weight: 900;
         color: var(--sub-title-color);
         text-align: center;
+        padding-top: 2rem;
     }
 
     .mobile {
@@ -523,6 +524,7 @@ p {
         font-weight: 900;
         color: var(--sub-title-color);
         text-align: center;
+        padding-top: 2rem;
     }
 
     .mobile {
