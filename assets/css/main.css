@@ -152,9 +152,6 @@ p {
     padding: 2rem 0;
 }
 
-
-
-
 .contact-ind {
     display: flex;
     justify-content: center;
@@ -221,6 +218,14 @@ p {
 .desc-item p{
     font-weight: 900;
     color: white;
+}
+
+.logos-item {
+    padding: 1rem;
+}
+
+.logos-item i {
+    padding: 1rem;
 }
 
 .desc-img-proj:hover, .desc-img-proj:hover .desc-item p {
@@ -419,7 +424,7 @@ p {
         text-align: center;
     }
 
-    .fa-android {
+    .fa-android, .fa-java {
         font-size: 3.5rem;
         color: var(--secundary-color);
     }
@@ -542,7 +547,7 @@ p {
         text-align: center;
     }
 
-    .fa-android {
+    .fa-android, .fa-java {
         font-size: 3.5rem;
         color: var(--secundary-color);
     }    
@@ -662,7 +667,7 @@ p {
         text-align: center;
     }
 
-    .fa-android {
+    .fa-android, .fa-java {
         font-size: 3.5rem;
         color: var(--secundary-color);
     }    
