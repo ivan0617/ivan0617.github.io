@@ -181,7 +181,7 @@ p {
     padding: 2rem;
 }
 
-.container-proj-ind {  
+.container-proj-ind, .container-proj-ind-web {  
     position: relative;  
     border-radius: 2rem;
     border-style: solid;
@@ -403,7 +403,7 @@ p {
         padding-top: 2rem;
     }
 
-    .mobile {
+    .mobile, .web {
         display: flex;
         justify-content: center;
     }
@@ -411,6 +411,11 @@ p {
     .container-proj-ind {
         width: 22rem;
         height: 33rem;  
+    }
+
+    .container-proj-ind-web {
+        width: 30rem;
+        height: 20rem;
     }
 
     .desc-img-proj {
@@ -425,7 +430,7 @@ p {
         text-align: center;
     }
 
-    .fa-android, .fa-java {
+    .fa-android, .fa-java, .fa-html5, .fa-css3-alt, .fa-js {
         font-size: 3.5rem;
         color: var(--secundary-color);
     }
