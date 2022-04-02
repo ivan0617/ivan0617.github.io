@@ -564,7 +564,7 @@ p {
         text-align: center;
     }
 
-    .fa-android, .fa-java {
+    .fa-android, .fa-java, .fa-html5, .fa-css3-alt, .fa-js {
         font-size: 3.5rem;
         color: var(--secundary-color);
     }    
@@ -694,7 +694,7 @@ p {
         text-align: center;
     }
 
-    .fa-android, .fa-java {
+    .fa-android, .fa-java, .fa-html5, .fa-css3-alt, .fa-js {
         font-size: 3.5rem;
         color: var(--secundary-color);
     }    
