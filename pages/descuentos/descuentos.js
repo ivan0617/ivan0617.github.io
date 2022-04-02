@@ -18,10 +18,18 @@ function  calcularPrecioConDescuento(precio, descuento){
     return precioConDescuento;
 }
 
-function getOptionCcoupon() {
+function getOptionCoupon() {
     const option = document.getElementById("optionCoupon").value;
     if(option === "Si") {
-        document.getElementById("containerCoupon").innerHTML = '<div id="containerCoupon"><input type="text" id="inputCoupon" placeholder="Codigo del cupon"></div>';
+        //document.getElementById("containerCoupon").innerHTML = '<div id="containerCoupon"><input type="text" id="inputCoupon" placeholder="Codigo del cupon"></div>';
+        document.getElementById("containerCoupon").innerHTML = '<div class="form">'
+                                                                +    '<input type="text" name="text" autocomplete="off" required id="inputCoupon"/>'
+                                                                +    '<label for="text" class="label-name">'
+                                                                +        '<span class="content-name">'
+                                                                +            'Cupon'
+                                                                +        '</span>'
+                                                                +    '</label>'
+                                                                +'</div>';
     } else{
         document.getElementById("containerCoupon").innerHTML = '<div id="containerCoupon"></div>';
     }
@@ -30,8 +38,8 @@ function getOptionCcoupon() {
 function buttonPriceDiscount(){
     const optionsCoupon = document.getElementById("optionCoupon").value;
     const result = document.getElementById("resultPrice");
-    const price = document.getElementById("inputPrice").valueAsNumber;
-    const discount = document.getElementById("inputDiscount").valueAsNumber;
+    const price = parseInt(document.getElementById("inputPrice").value);
+    const discount = parseInt(document.getElementById("inputDiscount").value);
     var precioConDesceunto;
 
     if(optionsCoupon === "Si") {

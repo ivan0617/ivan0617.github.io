@@ -10,27 +10,26 @@ html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #333;
 }
 
 .titulo {
     height: 8rem;
-    background-color: salmon;
+    background-color: #333C83;
     margin-bottom: 1rem;
-    min-width: 40rem;
 }
 
 .titulo h1 {
-    font-size: 4rem;
-    color: wheat;
+    color: white;
     padding: 1rem;
 }
 
 footer {
     width: 100%;
     height: 8rem;
-    background-color: salmon;
+    background-color: #333C83;
 }
 
 .footer p {
@@ -42,27 +41,176 @@ footer {
 .mainContainer {
     width: 100%;
     height: 100%;
-    min-width: 40rem;
     display: flex;
 }
 
 .container {
-    width: 35rem;
     padding: 3rem;
+    background-color: #15172b;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-style: solid;
     border-radius: 3rem;
-    border-color: #97DBAE;
-    border-width: 0.3rem;
-    margin: 10rem auto;
+    margin: 2rem auto;
 }
 
 .container div {
-    padding: 0.5rem;
+    padding: 1rem;
+}
+
+.container h1 {
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+label {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+span {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.form {
+    width: 20rem;
+    position: relative;
+    height: 5rem;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+  
+  .form input {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    background-color: #303245;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    padding-bottom: .5rem;
+ }
+
+.form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;   
+}
+
+.form label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+  
+.content-name {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+    transform: translateY(-56%);
+    font-size: 13px;
+    left: 1px;
+    color: white;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+    transform: translateX(0%);
+}
+
+.select {
+    background-color: #303245;
+    color: white;
 }
 
 .calcular {
-    background-color: #85C88A;
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+}
+
+.calcular:active {
+    background-color: #06b;
+  }
+
+#resultPrice {
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.muestra {
+    color: white;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .titulo h1 {
+        font-size: 2rem;
+        padding: 2.5rem;
+    }
+
+    .container {
+        width: 30rem;
+        min-height: 40rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .titulo h1 {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+
+    .container {
+        width: 32rem;
+        min-height: 40rem;
+    }
+}
+
+@media (min-width:900px) {
+    .titulo h1 {
+        font-size: 4rem;
+        padding: 1rem;
+    }
+
+    .container {
+        width: 35rem;
+        min-height: 40rem;
+    }
 }

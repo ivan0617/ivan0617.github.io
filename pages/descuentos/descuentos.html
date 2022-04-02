@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,23 +13,32 @@
     </header>
     <main class="mainContainer">
         <section class="container">
-            <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+            <h1>Calcula el precio a pagar de tus productos con descuento</h1>
             <div>
                 <label for="inputPrice">Escribe el precio de tu producto:</label>
             </div>
-            <div>
-                <input type="number" id="inputPrice">
+            <div class="form">
+                <input type="text" name="text" autocomplete="off" required id="inputPrice"/>
+                <label for="text" class="label-name">
+                    <span class="content-name">
+                        Precio
+                    </span>
+                </label>
             </div>
             <div>
                 <label for="inputDiscount">Escribe el descuento de tu producto:</label>
             </div>
-            <div>
-                <input type="number" id="inputDiscount">
+            <div class="form">
+                <input type="text" name="text" autocomplete="off" required id="inputDiscount"/>
+                <label for="text" class="label-name">
+                    <span class="content-name">
+                        Descuento
+                    </span>
+                </label>
             </div>
-
             <div>
-                <span>¿Cuentas con algun cupon?</span>
-                <select id="optionCoupon" onchange="getOptionCcoupon()">
+                <span>¿Cuentas con algun cupon? </span>
+                <select id="optionCoupon" onchange="getOptionCoupon()" class="select">
                     <option value="No">No</option>
                     <option value="Si">Si</option>
                 </select>
@@ -38,10 +47,10 @@
             <button type="button" class="calcular" onclick="buttonPriceDiscount()">
                 Calcular el precio 
             </button>
-
             <p id="resultPrice"></p>
         </section>
     </main>
+    <p class="muestra">Los cupones son los siguientes: ichi:10%, ni:20%, san:30%, yon:40%, go:50%, roku:60%, nana:70%, hachi:80%, kyuu:90%, juu:100%</p>
     <footer class="footer">
         <p>&copy Ivan Moctezuma</p>
         <p>ivan_0617_@hotmail.com</p>
