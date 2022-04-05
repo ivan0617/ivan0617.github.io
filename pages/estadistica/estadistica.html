@@ -8,15 +8,61 @@
     <link rel="stylesheet" href="../../assets/css/estadistica.css">
 </head>
 <body>
-    <section class="media">
-        <h1>Media</h1>
-    </section>
-    <section class="mediana">
-
-    </section>
+    <header class="titulo">
+        <h1>Medidas de tendencia central</h1>
+    </header>
+    <div class="containermm">
+        <section class="media">
+            <div class="container">
+                <h1 class="sub-title">Media</h1>
+                <p class="desc">Ingresa tus numeros separados por comas. Ejemplo: 1, 2, 3, 4.5, 6.9, 34, 67.87 ,100</p>
+                <div  class="form">
+                    <input type="text" name="text" autocomplete="off" required id="lado2Ti"/>
+                    <label for="text" class="label-name">
+                        <span class="content-name">
+                            Números
+                        </span>
+                    </label>
+                </div>
+                <button type="button">Calcular</button>
+                <p class="resul"></p>
+            </div>
+        </section>
+        <section class="mediana">
+            <div class="container">
+                <h1 class="sub-title">Mediana</h1>
+                <p class="desc">Ingresa tus numeros separados por comas. Ejemplo: 1, 2, 3, 4.5, 6.9, 34, 67.87 ,100</p>
+                <div  class="form">
+                    <input type="text" name="text" autocomplete="off" required id="lado2Ti"/>
+                    <label for="text" class="label-name">
+                        <span class="content-name">
+                            Números
+                        </span>
+                    </label>
+                </div>
+                <button type="button">Calcular</button>
+                <p class="resul"></p>
+            </div>
+        </section>
+    </div>
     <section class="moda">
-
+        <div class="container contm">
+            <h1 class="sub-title">Moda</h1>
+            <p class="desc">Ingresa tus numeros separados por comas. Ejemplo: 1, 2, 3, 4.5, 6.9, 34, 67.87 ,100</p>
+            <div  class="form">
+                <input type="text" name="text" autocomplete="off" required id="lado2Ti"/>
+                <label for="text" class="label-name">
+                    <span class="content-name">
+                        Números
+                    </span>
+                </label>
+            </div>
+            <button type="button">Calcular</button>
+            <p class="resul"></p>
+        </div>
     </section>
-    
+    <script src="../../assets/js/promedio.js"></script>
+    <script src="../../assets/js/mediana.js"></script>
+    <script src="../../assets/js/moda.js"></script>
 </body>
 </html>
