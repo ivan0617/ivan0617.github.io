@@ -680,6 +680,7 @@ p {
     .web {
         display: grid;
         grid-template-columns: 44rem 44rem;
+        row-gap: 2rem;
         justify-content: center;
         align-items: center;
         margin-bottom: 3rem;
@@ -718,5 +719,6 @@ p {
 @media (min-width:1000px) {
     .web {
         column-gap: 13rem;
+        row-gap: 10rem;
     }
 }
