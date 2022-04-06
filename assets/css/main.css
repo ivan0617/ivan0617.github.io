@@ -111,7 +111,7 @@ p {
 .porfilePicture {
     border-radius: 100%;
     width: 33rem;
-    height: 38rem;
+    height: 40rem;
     margin: 0;
 }
 
@@ -323,7 +323,7 @@ p {
 
     .porfilePicture {
         width: 31rem;
-        height: 36rem;
+        height: 38rem;
     }
 
     /*skills*/
@@ -584,12 +584,13 @@ p {
 
 /*Desktop*/
 @media (min-width:900px) {
-    /*skills*/
-
+    /*about*/
     .presentacion {
-        padding-top: 3rem;
+        padding-top: 5rem;
     }
     
+    
+    /*skills*/
     .container-skills {
         padding: 1rem;
         display: grid;
@@ -631,7 +632,6 @@ p {
         width: 20rem;
         height: 2.5rem;
     }
-
 
     .img-skills {
         width: 9.5rem;
@@ -689,7 +689,7 @@ p {
         row-gap: 2rem;
         justify-content: center;
         align-items: center;
-        margin-bottom: 3rem;
+        padding-bottom: 3rem;
     }
 
     .container-proj-ind {
