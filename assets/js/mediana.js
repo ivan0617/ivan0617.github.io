@@ -41,4 +41,16 @@ function calcularMediana(lista){
         mediana = lista[mitadLista];
     }
     console.log("La media es: " + mediana);
+    return mediana;
+}
+
+function calcMediana() {
+    var datos = document.getElementById("inputMediana").value;
+    var exp = /\s*,\s*/;
+    var separados = datos.split(exp);
+    var lista = separados.map(function(i){
+        return parseFloat(i);
+    });
+    var mediana = calcularMediana(lista);
+    var res = document.getElementById("resulMe").innerText = "La mediana es: " + mediana;
 }

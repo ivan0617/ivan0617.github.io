@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,15 +17,15 @@
                 <h1 class="sub-title">Media</h1>
                 <p class="desc">Ingresa tus numeros separados por comas. Ejemplo: 1, 2, 3, 4.5, 6.9, 34, 67.87 ,100</p>
                 <div  class="form">
-                    <input type="text" name="text" autocomplete="off" required id="lado2Ti"/>
+                    <input type="text" name="text" autocomplete="off" required id="inputMedia"/>
                     <label for="text" class="label-name">
                         <span class="content-name">
                             Números
                         </span>
                     </label>
                 </div>
-                <button type="button">Calcular</button>
-                <p class="resul"></p>
+                <button type="button" onclick="calcularMedia()">Calcular</button>
+                <p class="resul" id="resulP"></p>
             </div>
         </section>
         <section class="mediana">
@@ -33,15 +33,15 @@
                 <h1 class="sub-title">Mediana</h1>
                 <p class="desc">Ingresa tus numeros separados por comas. Ejemplo: 1, 2, 3, 4.5, 6.9, 34, 67.87 ,100</p>
                 <div  class="form">
-                    <input type="text" name="text" autocomplete="off" required id="lado2Ti"/>
+                    <input type="text" name="text" autocomplete="off" required id="inputMediana"/>
                     <label for="text" class="label-name">
                         <span class="content-name">
                             Números
                         </span>
                     </label>
                 </div>
-                <button type="button">Calcular</button>
-                <p class="resul"></p>
+                <button type="button" onclick="calcMediana()">Calcular</button>
+                <p class="resul" id="resulMe"></p>
             </div>
         </section>
     </div>
@@ -50,15 +50,15 @@
             <h1 class="sub-title">Moda</h1>
             <p class="desc">Ingresa tus numeros separados por comas. Ejemplo: 1, 2, 3, 4.5, 6.9, 34, 67.87 ,100</p>
             <div  class="form">
-                <input type="text" name="text" autocomplete="off" required id="lado2Ti"/>
+                <input type="text" name="text" autocomplete="off" required id="inputModa"/>
                 <label for="text" class="label-name">
                     <span class="content-name">
                         Números
                     </span>
                 </label>
             </div>
-            <button type="button">Calcular</button>
-            <p class="resul"></p>
+            <button type="button" onclick="calcModa()">Calcular</button>
+            <p class="resul" id="resulMo"></p>
         </div>
     </section>
     <script src="../../assets/js/promedio.js"></script>

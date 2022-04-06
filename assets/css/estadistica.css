@@ -142,7 +142,9 @@ button:hover {
 }
 
 .resul {
+    font-size: 2rem;
     padding: 2rem;
+    color: white;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) { 
