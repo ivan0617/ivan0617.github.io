@@ -723,6 +723,14 @@ p {
 
 
 @media (min-width:1000px) {
+    .container-skills {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 29rem 29rem 29rem;
+        column-gap: 7rem;
+        justify-content: center;
+    }
+
     .web {
         column-gap: 13rem;
         row-gap: 10rem;
